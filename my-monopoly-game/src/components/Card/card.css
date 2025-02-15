@@ -1,0 +1,125 @@
+.card-bg {
+  width: 11.11%;
+  height: 100%;
+  border-radius: 5px;
+  background-position: center center;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+}
+.card {
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-bg-accent-transparent);
+  backdrop-filter: blur(3px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  font-family: "Oswald", serif;
+  font-size: clamp(8px, 1.5vw, 18px);
+}
+.card .half {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card .half.name {
+  align-items: flex-start;
+}
+.card .half p {
+  background-color: rgba(255, 255, 255, 0.103);
+  font-size: clamp(6px, 0.99vw, 15px);
+  padding: 2px 7px;
+  border-radius: 2px;
+}
+.card .half.name .circle {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 10px;
+}
+.extra-card {
+  width: 11.11%;
+  height: 100%;
+  border-radius: 5px;
+  background-color: var(--color-bg-accent-transparent);
+  backdrop-filter: blur(5px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
+  text-align: center;
+  font-family: "Oswald", serif;
+  font-size: clamp(8px, 1.5vw, 16px);
+}
+.extra-card img {
+  width: calc(var(--width) / 1.2);
+  height: calc(var(--width) / 1.2);
+}
+.extra-card img[src="./incomeTax.jpeg"] {
+  filter: invert(100%);
+}
+.extra-card.treasure {
+  color: #e9bc26;
+  text-shadow: 5px -1px 4px #e9bc26c4;
+}
+.extra-card.surprise {
+  color: #5f72e7;
+  text-shadow: 5px -1px 4px rgba(95, 114, 231, 0.75);
+}
+
+.card.airport .name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.card.card.airport .name img {
+  width: calc(var(--width) / 1.2);
+  height: auto;
+  filter: invert(70%);
+}
+
+.row.bottom .card,
+.row.left .card,
+.row.right .card {
+  flex-direction: column-reverse;
+}
+.row.bottom .half.name,
+.row.left .half.name,
+.row.right .half.name {
+  align-items: flex-end;
+}
+.row.bottom .half.name div,
+.row.left .half.name div,
+.row.right .half.name div {
+  top: calc(-1 * var(--width) / 4) !important;
+}
+.row.bottom .airport .half.name,
+.row.left .airport .half.name,
+.row.right .airport .half.name {
+  flex-direction: column-reverse;
+  align-items: center;
+}
+.row.bottom .extra-card,
+.row.left .extra-card,
+.row.right .extra-card {
+  flex-direction: column-reverse;
+}
+
+.card .name div {
+  width: calc(var(--width) / 2) !important;
+  height: calc(var(--width) / 2) !important;
+  bottom: calc(-1 * var(--width) / 4) !important;
+}

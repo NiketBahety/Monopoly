@@ -1,0 +1,64 @@
+.game-board {
+  width: min(80vw, 98vh);
+  height: min(80vw, 98vh);
+  min-width: min(95vw, 600px);
+  min-height: min(95vw, 600px);
+  background-color: var(--color-bg-accent);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+:root {
+  --row-height: 12%;
+  --row-width: 76%;
+}
+.row {
+  width: var(--row-width);
+  height: var(--row-height);
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.corner {
+  width: var(--row-height);
+  height: var(--row-height);
+  position: absolute;
+}
+.row.top {
+  top: 0;
+  left: calc((100% - var(--row-width)) / 2);
+}
+.row.bottom {
+  bottom: 0;
+  left: calc((100% - var(--row-width)) / 2);
+}
+.row.left {
+  left: calc((100% - var(--row-width)) / 2);
+  top: calc((100% - var(--row-width)) / 2);
+  transform: rotateZ(90deg);
+  transform-origin: 0 0 0;
+}
+.row.right {
+  right: calc((100% - var(--row-width)) / 2);
+  top: calc((100% - var(--row-width)) / 2);
+  transform: rotateZ(270deg);
+  transform-origin: top right;
+}
+.corner.top-left {
+  left: 0;
+  top: 0;
+}
+.corner.top-right {
+  right: 0;
+  top: 0;
+}
+.corner.bottom-left {
+  left: 0;
+  bottom: 0;
+}
+.corner.bottom-right {
+  right: 0;
+  bottom: 0;
+}
