@@ -116,10 +116,22 @@ const Board = () => {
           <Card key={`right-${index}`} cardInfo={place} />
         ))}
       </div>
-      <div className="corner top-left"></div>
-      <div className="corner top-right"></div>
-      <div className="corner bottom-left"></div>
-      <div className="corner bottom-right"></div>
+      <div className="corner top-left">
+        <p>START</p>
+        <img src="./start.png" alt="" />
+      </div>
+      <div className="corner top-right">
+        <span>0$ on hold</span>
+        <p>Vacation</p>
+        <img src="./vacation.png" alt="" />
+      </div>
+      <div className="corner bottom-left">
+        <p>GO TO JAIL</p>
+        <img src="./goToJail.png" alt="" />
+      </div>
+      <div className="corner bottom-right">
+        <img src="./jail.png" alt="" />
+      </div>
       <Dice />
     </div>
   );
