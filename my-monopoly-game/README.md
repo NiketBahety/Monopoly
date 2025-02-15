@@ -1,8 +1,29 @@
-# React + Vite
+## Project Setup and Development
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+To get started with the project, follow these steps:
 
-Currently, two official plugins are available:
+### 1. Install Dependencies
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Move to the project folder
+
+```bash
+cd ./my-monopoly-game
+```
+
+### 2. Install Dependencies
+
+Run the following command to install all required dependencies for the project:
+
+```bash
+npm install
+```
+
+### 3. Run the Development Server
+
+Once the dependencies are installed, start the development server by running:
+
+```bash
+npm run dev
+```
+
+This will launch the app in development mode, and you can access it in your browser at http://localhost:5173
