@@ -67,7 +67,7 @@
   width: calc(var(--width) / 1.2);
   height: calc(var(--width) / 1.2);
 }
-.extra-card img[src="./incomeTax.jpeg"] {
+.extra-card img[src="/incomeTax.jpeg"] {
   filter: invert(100%);
 }
 .extra-card.treasure {

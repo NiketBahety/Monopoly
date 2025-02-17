@@ -1,0 +1,55 @@
+.room {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.room .btn {
+  padding: 15px 30px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--color-bg-accent);
+  color: white;
+  font-size: 28px;
+  cursor: pointer;
+  box-shadow: 0px 0px 10px 0 var(--color-shadow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  width: 100%;
+}
+.btn span {
+  font-family: "Oswald", serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.name-input {
+  width: 100%;
+  font-weight: bold;
+  font-family: "Oswald", serif;
+  font-size: 18px;
+  padding: 15px 30px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--color-bg-accent);
+  color: white;
+  text-transform: lowercase;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  min-width: min(95vw, 300px);
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+  font-family: "Oswald", serif;
+  font-size: 18px;
+}

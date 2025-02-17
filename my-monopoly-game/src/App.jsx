@@ -1,12 +1,11 @@
 import React from "react";
 import "./App.css";
-
-import Board from "./components/Board/Board.jsx";
+import AllRoutes from "./components/AllRoutes/AllRoutes";
 
 function App() {
   return (
     <div className="app">
-      <Board></Board>
+      <AllRoutes />
     </div>
   );
 }

@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import "./card.css";
 
-const Card = ({ cardInfo }) => {
+const Card = ({ cardInfo, players }) => {
   const cardBgRef = useRef(null);
   const circleRef = useRef(null);
 
